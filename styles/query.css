@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 895px){
+  nav.navbar{
+    display: flex;
+  }
+  .dropdown{
+    display: none !important;
+  }
+  
+  }

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+.elements{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: .5rem;
+  flex-wrap: wrap;
+}
+input.elemets-repeat{
+  width: 2rem;
+  height: 2rem;
+  border-radius: .2rem;
+  margin-top: 1rem;
+  border: none;
+  text-align: center;
+
+  &:focus{
+    box-shadow: 1px 1px 20px 1px #000000ad;
+  }
+}
+.container2 #arguments {
+  width: 100%;
+}
+
+.result div{
+  margin-top: 1rem;
+}
