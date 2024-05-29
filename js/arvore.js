@@ -8,6 +8,7 @@ function arvore() {
   const valorFilho4 = Number(document.getElementById('filho4').value)
   const maximoSol = Number(document.getElementById('sol').value)
   const maximoChuva = Number(document.getElementById('chuva').value)
+  let largura = window.innerWidth
   const arvoretree = document.getElementById('divtree')
 
   if(valorCompra==0 || valorVenda==0){
@@ -18,37 +19,36 @@ function arvore() {
 
   //Neto 1
   let custoNeto1 = valorCompra*valorFilho1
-  let receitaNeto1 = (valorFilho1 > maximoSol)? valorVenda*(valorFilho1-maximoSol) : ((1-(porcentagemPerda/100))*valorFilho1*valorVenda)
+  let receitaNeto1 = (valorFilho1 > maximoSol)? valorVenda*maximoSol : ((1-(porcentagemPerda/100))*valorFilho1*valorVenda)
   let lucroNeto1 = receitaNeto1 - custoNeto1
   //Neto 2
   let custoNeto2 = valorCompra*valorFilho1
-  let receitaNeto2 = (valorFilho1 > maximoChuva)? valorVenda*(valorFilho1-maximoChuva) : ((1-(porcentagemPerda/100))*valorFilho1*valorVenda)
+  let receitaNeto2 = (valorFilho1 > maximoChuva)? valorVenda*maximoChuva : ((1-(porcentagemPerda/100))*valorFilho1*valorVenda)
   let lucroNeto2 = receitaNeto2 - custoNeto2
   //Neto 3
   let custoNeto3 = valorCompra*valorFilho2
-  let receitaNeto3 = (valorFilho2 > maximoSol)? valorVenda*(valorFilho2-maximoSol) : ((1-(porcentagemPerda/100))*valorFilho2*valorVenda)
+  let receitaNeto3 = (valorFilho2 > maximoSol)? valorVenda*maximoSol : ((1-(porcentagemPerda/100))*valorFilho2*valorVenda)
   let lucroNeto3 = receitaNeto3 - custoNeto3
   //Neto 4
   let custoNeto4 = valorCompra*valorFilho2
-  let receitaNeto4 = (valorFilho2 > maximoChuva)? valorVenda*(valorFilho2-maximoChuva) : ((1-(porcentagemPerda/100))*valorFilho2*valorVenda)
+  let receitaNeto4 = (valorFilho2 > maximoChuva)? valorVenda*maximoChuva : ((1-(porcentagemPerda/100))*valorFilho2*valorVenda)
   let lucroNeto4 = receitaNeto4 - custoNeto4
   //Neto 5
   let custoNeto5 = valorCompra*valorFilho3
-  let receitaNeto5 = (valorFilho3 > maximoSol)? valorVenda*(valorFilho3-maximoSol) : ((1-(porcentagemPerda/100))*valorFilho3*valorVenda)
+  let receitaNeto5 = (valorFilho3 > maximoSol)? valorVenda*maximoSol : ((1-(porcentagemPerda/100))*valorFilho3*valorVenda)
   let lucroNeto5 = receitaNeto5 - custoNeto5
   //Neto 6
   let custoNeto6 = valorCompra*valorFilho3
-  let receitaNeto6 = (valorFilho3 > maximoChuva)? valorVenda*(valorFilho3-maximoChuva) : ((1-(porcentagemPerda/100))*valorFilho3*valorVenda)
+  let receitaNeto6 = (valorFilho3 > maximoChuva)? valorVenda*maximoChuva : ((1-(porcentagemPerda/100))*valorFilho3*valorVenda)
   let lucroNeto6 = receitaNeto6 - custoNeto6
   //Neto 7
   let custoNeto7 = valorCompra*valorFilho4
-  let receitaNeto7 = (valorFilho4 > maximoSol)? valorVenda*(valorFilho4-maximoSol) : ((1-(porcentagemPerda/100))*valorFilho4*valorVenda)
+  let receitaNeto7 = (valorFilho4 > maximoSol)? valorVenda*maximoSol : ((1-(porcentagemPerda/100))*valorFilho4*valorVenda)
   let lucroNeto7 = receitaNeto7 - custoNeto7
   //Neto 8
   let custoNeto8 = valorCompra*valorFilho4
-  let receitaNeto8 = (valorFilho4 > maximoChuva)? valorVenda*(valorFilho4-maximoChuva) : ((1-(porcentagemPerda/100))*valorFilho4*valorVenda)
+  let receitaNeto8 = (valorFilho4 > maximoChuva)? valorVenda*maximoChuva : ((1-(porcentagemPerda/100))*valorFilho4*valorVenda)
   let lucroNeto8 = receitaNeto8 - custoNeto8
-
    return arvoretree.innerHTML= `
    <div class="scrollable">
    <div class="content">   

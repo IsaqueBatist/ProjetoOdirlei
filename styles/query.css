@@ -7,5 +7,7 @@
   .dropdown{
     display: none !important;
   }
-  
+  .scrollable{
+    width: 800px;
+  }
   }
