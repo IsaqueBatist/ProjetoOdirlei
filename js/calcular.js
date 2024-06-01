@@ -55,15 +55,3 @@ function calcular() {
     return history.innerHTML = newHistory + history.innerHTML
   }
 }
-
-
-const jsonString = document.getElementById('json')
-const jsonData = JSON.parse(jsonString.textContent)
-
-let json = jsonData
-
-let jsonstring = JSON.stringify(json, null, 2)
-
-jsonString.textContent = jsonstring
-
-console.log(jsonData)
