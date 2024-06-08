@@ -18,6 +18,6 @@ O projeto foi feito totalmente pelos integrantes do grupo, enfrentamos dificulda
 
 ### Desenvolvedores
 + [Felipe Nascimento](https://github.com/felip-SN)
-+ [Isaque Barbosa](https://github.com/IsaqueBatist?tab=following
++ [Isaque Barbosa](https://github.com/IsaqueBatist)
 
 # ACESSE O [PROJETO](https://isaquebatist.github.io/ProjetoOdirlei/#)
