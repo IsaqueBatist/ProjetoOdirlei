@@ -14,8 +14,10 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <!--Favicon-->
+  
   <link href="assets/favicon.svg" rel="shortcut icon" type="image/x-icon" />
   <!--CSS-->
+  <link href="styles/footer.css" rel="stylesheet"> 
   <link href="styles/container.css" rel="stylesheet" />
   <link href="styles/global.css" rel="stylesheet" />
   <link href="styles/navbar.css" rel="stylesheet" />
@@ -29,6 +31,7 @@
 </head>
 
 <body id="body">
+  <header>
     <!--DropDownmenu-->
     <div class="dropdown">
       <button aria-expanded="false" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" type="button">
@@ -42,7 +45,7 @@
         <li><a class="dropdown-item" href="#" id="arvoreDrop">Arvore de Decisão</a>
         <li>
           <div class="pinguin">
-            <img alt="" src="assets/pinguim.png" />
+            <img alt="pinguin" src="assets/pinguim.png" />
           </div>
       </ul>
     </div>
@@ -54,12 +57,16 @@
       <div class="argumentos" id="containerButton">
         <button id="argumentos">Argumentos</button>
       </div>
-      <a href="#" id="arvore">Árvore de Decisão</a>
-      <a><img alt="" src="assets/pinguim.png" /></a>
+        <a href="#" id="arvore">Árvore de Decisão</a>
+        <a><img alt="" src="assets/pinguim.png" /></a>
     </nav>
+  </header>
     <div class="container2" id="main">
 
     </div>
+    <footer>
+      <p>feito com ❤️ e ☕</p>
+    </footer>
     <!--Scripts-->
     <script src="js/calcular.js"></script>
     <script src="js/calcularArranjo.js"></script>
