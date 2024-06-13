@@ -1,4 +1,3 @@
-console.log('dentro')
 function calcular() {
   const valor = document.getElementById('value').value
   const resultado = document.getElementById('result')
